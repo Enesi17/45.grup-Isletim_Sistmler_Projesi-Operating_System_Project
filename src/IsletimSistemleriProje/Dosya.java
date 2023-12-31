@@ -1,4 +1,4 @@
-package OSProjectProva1;
+package IsletimSistemleriProje;
 
 import java.io.File;
 import java.io.FileNotFoundException;

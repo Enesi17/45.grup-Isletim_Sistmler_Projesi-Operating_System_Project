@@ -1,4 +1,4 @@
-package OSProjectProva1;
+package IsletimSistemleriProje;
 
 public class Node {
 		
