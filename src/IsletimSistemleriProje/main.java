@@ -50,19 +50,26 @@ public class main {
             tumListe.sonraki();
         }
         
-        
+        // Gereken degiskenlerin tanimlanmasi
         int yenimiBasladi = 0;
         int calistigiSure = 0;
         int calisacagiSure = 0;
         int gercekZaman = 0;
         int gercekZamanIcerideArtmadi = 0;
+        
+        // infinite loop, her proses bitene kadar calisacak
         while (true) {
             gercekZamanIcerideArtmadi = 0;
+            
+            // Gercek zaman proses gelmemise
             if (p0.head != null) {
+            	// Gelmise FCFS ile calistirabilmek icin kontrol
                 if (p0.head.process.varisZamani <= gercekZaman) {
+                	//Tanimlamalar
                     calisacagiSure = p0.head.process.calisacagiSure;
                     calistigiSure = p0.head.process.calistigiSure;
                     yenimiBasladi = calisacagiSure - calistigiSure;
+                    
                     if (yenimiBasladi == calisacagiSure) {
                         p0.head.process.yeniBasladi(gercekZaman, yenimiBasladi);
                         p0.head.process.calistigiSure++;
