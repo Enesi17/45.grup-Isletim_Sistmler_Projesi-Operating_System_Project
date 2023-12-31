@@ -3,17 +3,31 @@ package IsletimSistemleriProje;
 public class main {
 
 	public static void main(String[] args) {
+		// Tum prosesleri okuyabilmek icin liste
 		DoublyLinkedList tumListe = new DoublyLinkedList();
+		
+		// Dosya okumak icin bir Dosya object olusturalim
         Dosya dosya = new Dosya();
+        
+        // Onceligi gore list olusturuyoruz
         DoublyLinkedList p0 = new DoublyLinkedList();
         DoublyLinkedList p1 = new DoublyLinkedList();
         DoublyLinkedList p2 = new DoublyLinkedList();
         DoublyLinkedList p3 = new DoublyLinkedList();
+        
+        // Dogum list icin
         Node node;
         Node nodeTutucu;
+        
+        // Cikti icin baslik
         System.out.println("Pid   varış   öncelik    cpu    MBytes   prn   scn   modem   cd     status");
+        
+        // oncelik icin bir degisken
         int oncelik;
+        
+        // Dosya okumak icin dosyanin location yazilmali veya args[0] olarak verilmeli
         tumListe = dosya.Oku("C:\\Users\\Enes\\Desktop\\donem 4\\PDP\\Eclipse\\OSProject\\girisTest.txt");
+        
         // onceliklerine göre listelere atılıyor...
         for (int i = 0; i < tumListe.size; i++) {
             oncelik = tumListe.head.process.oncelik;
@@ -35,7 +49,8 @@ public class main {
             }
             tumListe.sonraki();
         }
-
+        
+        
         int yenimiBasladi = 0;
         int calistigiSure = 0;
         int calisacagiSure = 0;
