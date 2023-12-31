@@ -26,7 +26,7 @@ public class main {
         int oncelik;
         
         // Dosya okumak icin dosyanin location yazilmali veya args[0] olarak verilmeli
-        tumListe = dosya.Oku("C:\\Users\\Enes\\Desktop\\donem 4\\PDP\\Eclipse\\OSProject\\girisTest.txt");
+        tumListe = dosya.Oku("C:\\Users\\Enes\\Desktop\\45.group-Isletim_Sistmler_Projesi-Operating_System_Project\\dist\\giris.txt");
         
         // onceliklerine göre listelere atılıyor...
         for (int i = 0; i < tumListe.size; i++) {
