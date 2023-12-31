@@ -2,8 +2,7 @@ package OSProjectProva1;
 
 public class DoublyLinkedList {
 	Node head;
-	public int size;
-	
+	public int size;	
 	public void addLast(Node newNode) {
 		if(head == null) {
 			head = newNode;
